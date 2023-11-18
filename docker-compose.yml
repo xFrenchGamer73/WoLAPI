@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  wolapi:
+    image: xfrenchgamer73/wolapi:latest
+    container_name: wolapi
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - FLASK_ENV=production
+      - TARGET_MAC= #ff:ff:ff:ff:ff:ff
+      - PORT= #5000

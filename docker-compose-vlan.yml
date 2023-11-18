@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  wolapi:
+    image: xfrenchgamer73/wolapi:latest
+    container_name: wolapi
+    networks:
+      wolapi:
+        ipv4_address: #192.168.1.123
+    environment:
+      - FLASK_ENV=production
+      - PORT= #5000
+      - TARGET_MAC= #ff:ff:ff:ff:ff:ff
+
+networks:
+  wolapi:
+    driver: macvlan
+    driver_opts:
+      parent: #eth0
+    ipam:
+      config:
+        - subnet: #192.168.1.0/24
