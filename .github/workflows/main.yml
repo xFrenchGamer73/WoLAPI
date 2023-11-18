@@ -3,7 +3,7 @@ name: Publish Docker Image to Docker Hub
 on:
   push:
     tags:
-      - 'v*'  # Déclencheur pour les tags versionnés
+      - '*'  # Déclencheur pour les tags versionnés
 
 jobs:
   build:
