@@ -63,8 +63,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 283f25fdd9e760018fa41a4346f554a8e4394ec9
 #1.0
